@@ -1,0 +1,27 @@
+.rows-news{
+    display: flex;
+    text-align: center;
+    margin-left: 13%;
+}
+.my-news{
+    padding-right: 20px;
+}
+.rows-news .my-news{
+    max-width: 350px;
+}
+.rows-news .my-news img{
+    width: 330px;
+    max-height: 180px;
+}
+.rows-news .my-news .conten-news{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.rows-news .my-news .all-my-news{
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
