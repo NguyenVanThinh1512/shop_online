@@ -1,13 +1,13 @@
 .rows-news{
     display: flex;
     text-align: center;
-    margin-left: 13%;
+    justify-content: center
 }
 .my-news{
     padding-right: 20px;
 }
 .rows-news .my-news{
-    max-width: 350px;
+    max-width: 360px;
 }
 .rows-news .my-news img{
     width: 330px;
