@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TrangchuComponent } from './components/trangchu/trangchu.component';
 import { ContenTintucComponent } from './components/conten-tintuc/conten-tintuc.component';
+import { ProductContainerComponent } from './components/product-container/product-container.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContenTintucComponent } from './components/conten-tintuc/conten-tintuc.
     HeaderComponent,
     FooterComponent,
     TrangchuComponent,
-    ContenTintucComponent
+    ContenTintucComponent,
+    ProductContainerComponent
   ],
   imports: [
     BrowserModule,
