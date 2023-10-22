@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TrangchuComponent } from './components/trangchu/trangchu.component';
 import { ContenTintucComponent } from './components/conten-tintuc/conten-tintuc.component';
 import { ProductContainerComponent } from './components/product-container/product-container.component';
+import { GioithieuComponent } from './components/gioithieu/gioithieu.component';
+import { LienheComponent } from './components/lienhe/lienhe.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ProductContainerComponent } from './components/product-container/produc
     FooterComponent,
     TrangchuComponent,
     ContenTintucComponent,
-    ProductContainerComponent
+    ProductContainerComponent,
+    GioithieuComponent,
+    LienheComponent
   ],
   imports: [
     BrowserModule,

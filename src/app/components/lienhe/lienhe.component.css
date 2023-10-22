@@ -1,0 +1,18 @@
+.lienhe{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.bow{
+    display: flex;
+    height: 30px;
+}
+.bow p{
+        font-size: 19px;
+        margin-left: 5px;
+}
+h2 {
+    color: #A52E84;
+}
+.cach{
+    height: 10px;
+}
