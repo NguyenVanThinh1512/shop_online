@@ -5,12 +5,16 @@ import { ProductContainerComponent } from './components/product-container/produc
 import { TrangchuComponent } from './components/trangchu/trangchu.component';
 import { GioithieuComponent } from './components/gioithieu/gioithieu.component';
 import { LienheComponent } from './components/lienhe/lienhe.component';
+import { TintucComponent } from './components/tintuc/tintuc.component';
+import { ChitiettintucComponent } from './components/chitiettintuc/chitiettintuc.component';
 
 const routes: Routes = [
   { path: '', component: TrangchuComponent },
   { path: 'product/:id', component: ProductContainerComponent },
   { path: 'gioithieu', component: GioithieuComponent },
   { path: 'lienhe', component: LienheComponent },
+  { path: 'tintuc', component: TintucComponent },
+  { path: 'chitiettintuc', component: ChitiettintucComponent },
 ];
 
 @NgModule({

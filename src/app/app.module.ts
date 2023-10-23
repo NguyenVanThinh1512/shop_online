@@ -10,6 +10,8 @@ import { ContenTintucComponent } from './components/conten-tintuc/conten-tintuc.
 import { ProductContainerComponent } from './components/product-container/product-container.component';
 import { GioithieuComponent } from './components/gioithieu/gioithieu.component';
 import { LienheComponent } from './components/lienhe/lienhe.component';
+import { ChitiettintucComponent } from './components/chitiettintuc/chitiettintuc.component';
+import { TintucComponent } from './components/tintuc/tintuc.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LienheComponent } from './components/lienhe/lienhe.component';
     ContenTintucComponent,
     ProductContainerComponent,
     GioithieuComponent,
-    LienheComponent
+    LienheComponent,
+    ChitiettintucComponent,
+    TintucComponent
   ],
   imports: [
     BrowserModule,
