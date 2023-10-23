@@ -1,0 +1,127 @@
+.tintuc{
+    display: flex;
+    max-width: 1120px;
+    margin: auto;
+    margin-top: 15px;
+}
+.my-news{
+    max-width: 550px;
+    margin-bottom: 15px;
+}
+.conten-tintuc-new{
+    width: 50%;
+}
+.conten-news {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+a img {
+    width: 530px;
+}
+.all-my-news {
+    margin-top: 15px;
+}
+
+/* tìm kiếm */
+.box-container-search{
+    max-width: 150px;
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--blue-gray-100, #F1F5F9);
+    margin-left: 44px;
+    position: relative;
+}
+.container-search input{
+    max-width: 150px;
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blue-gray-100, #F1F5F9);
+    margin-left: 44px;
+    
+}
+.text-search{
+    color: var(--64748-b, #64748B);
+    font-family: SVN-Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container-search input#search{
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.container-search input:focus {
+    outline: none;
+ }
+.container-search .icom{
+    position: absolute;
+    margin: 7px 0px 7px 13px;
+}
+
+.new .conten-news{
+    margin-top: 20px;
+}
+.new{
+    margin-left: 45px;
+}
+.boder-button {
+    border-bottom: 1px solid #545252;
+    max-width: 70%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.conten-tintuc-new {
+    border-left: 1px solid;
+}
+.rows-news {
+    margin-right: 30px;
+}
+.top{
+    margin-top: 20px;
+}
+.phanhoi{
+    border: 1px solid ;
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.phanhoi .tab-content
+{
+    margin: 40px;    
+}
+.fome-comment{
+    display: flex;
+}
+.fome-comment .content-name{
+    margin-right: 25px;
+}
+input.content-name {
+    height: 30px;
+}
+input.content-email {
+    height: 30px;
+}
+.fome-check{
+    display: flex;
+}
+input[type="checkbox"] {
+    margin-right: 15px;
+}
+input[type="submit"] {
+    height: 35px;
+    background-color: #834453;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 16px;
+}
+.content-email {
+    width: 360px;
+}
+.content-name {
+    width: 360px;
+}

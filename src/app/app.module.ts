@@ -12,6 +12,7 @@ import { GioithieuComponent } from './components/gioithieu/gioithieu.component';
 import { LienheComponent } from './components/lienhe/lienhe.component';
 import { ChitiettintucComponent } from './components/chitiettintuc/chitiettintuc.component';
 import { TintucComponent } from './components/tintuc/tintuc.component';
+import { ThanhtoanComponent } from './components/thanhtoan/thanhtoan.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TintucComponent } from './components/tintuc/tintuc.component';
     GioithieuComponent,
     LienheComponent,
     ChitiettintucComponent,
-    TintucComponent
+    TintucComponent,
+    ThanhtoanComponent
   ],
   imports: [
     BrowserModule,
