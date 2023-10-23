@@ -82,3 +82,8 @@ a img {
 .rows-news {
     margin-right: 30px;
 }
+h1.title-tintuc {
+    max-width: 1120px;
+    margin: auto;
+    padding-top: 20px;
+}

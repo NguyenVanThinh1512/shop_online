@@ -1,0 +1,151 @@
+h1 {
+    max-width: 1120px;
+    margin: auto;
+    padding-top: 20px;
+}
+.giatien-xoadon{
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.giatien {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.xoadon{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #FF0000;
+}
+.rows{
+    max-width: 1120px;
+    display: flex;
+    margin: auto;
+}
+
+.rows-product {
+    display: flex;
+    width: 560px;
+    margin: 20px 0px 20px 0px;
+}
+/* sản phẩm */
+.row-conten-product .product-infor{
+    width: 550px;
+    height: 700px;
+    padding: 20px 10px 10px 20px;
+}
+.product-gallery{
+    display: flex;
+}
+.product-gallery .small-images{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.small-images-below{
+    opacity: 0.5;
+}
+.product-gallery .big-images{
+    margin-top: 20px;
+}
+.small-images img{
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 5px;
+}
+.big-images {
+    max-width: 400px;
+    max-height: 650px;
+}
+.big-images img{
+    height: 650px;
+    width: 457px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.divider{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.nav-product-infor a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #2d2527;
+}
+.product-name{
+    color: #6D3B47;
+}
+.gia-tien{
+    font-size: 20px;
+    color: #FF0000;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.warehouse{
+    color: #479C46;
+    font-weight: 600;
+}
+button.add-cart {
+    height: 40px;
+    background-color: #A8583C;
+    border: 2px solid #834453;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
+}
+button.add-cart:hover{
+    background-color: #834453;
+    color: #FFFF;
+}
+.Product-number{
+    margin-top: 10px;
+}
+input.Product-number-numder {
+    width: 40px;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+button.Product-number-button {
+    height: 35px;
+}
+.rows-product img{
+    width: 250px;
+    height: 300px;
+}
+.product-infor {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.summit {
+    text-align: center;
+}
+input[type="submit"] {
+    height: 40px;
+    width: 200px;
+    background-color: #A8583C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+input[type="submit"]:hover{
+    background-color: #681e03;
+}
+.xoadon {
+    margin-right: 88px;
+}
