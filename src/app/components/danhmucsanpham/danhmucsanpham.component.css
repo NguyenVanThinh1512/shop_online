@@ -1,0 +1,74 @@
+.title-product-portfolio{
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home-product {
+    max-width: 1120px;
+   display: flex; 
+}
+.home{
+    color: #7e7e7e;
+}
+
+.show-display{
+    margin-right: 20px;
+}
+.display{
+    display: flex;
+    font-size: 18px;
+    line-height: 67px;
+}
+select.orderby {
+    height: 30px;
+}
+.body-product-portfolio{
+    max-width: 1120px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.product-portfolio{
+    max-width: 280px;
+}
+.product-portfolio p {
+    font-size: 18px;
+    border-bottom: 1px solid;
+}
+.product{
+    max-width: 840px;
+    margin: auto;
+}
+.body-product-portfolio{
+    display: flex;
+}
+.rows-product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.product-name{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.gia-tien{
+    font-size: 16px;
+    color: #FF0000;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+button.add-cart {
+    height: 30px;
+    background-color: #ffff;
+    border: 2px solid #834453;
+    line-height: 25px;
+    color: #834453;
+    font-weight: 700;
+}
+button.add-cart:hover{
+    background-color: #834453;
+    color: #FFFF;
+}
