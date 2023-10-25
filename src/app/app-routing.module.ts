@@ -8,6 +8,8 @@ import { LienheComponent } from './components/lienhe/lienhe.component';
 import { TintucComponent } from './components/tintuc/tintuc.component';
 import { ChitiettintucComponent } from './components/chitiettintuc/chitiettintuc.component';
 import { ThanhtoanComponent } from './components/thanhtoan/thanhtoan.component';
+import { ThanhtoangiaohangComponent } from './components/thanhtoangiaohang/thanhtoangiaohang.component';
+import { DanhmucsanphamComponent } from './components/danhmucsanpham/danhmucsanpham.component';
 
 const routes: Routes = [
   { path: '', component: TrangchuComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'tintuc', component: TintucComponent },
   { path: 'chitiettintuc', component: ChitiettintucComponent },
   { path: 'thanhtoan', component: ThanhtoanComponent },
+  { path: 'thanhtoangiaohang', component: ThanhtoangiaohangComponent },
+  { path: 'danhmucsanpham', component: DanhmucsanphamComponent },
 ];
 
 @NgModule({

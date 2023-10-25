@@ -13,6 +13,8 @@ import { LienheComponent } from './components/lienhe/lienhe.component';
 import { ChitiettintucComponent } from './components/chitiettintuc/chitiettintuc.component';
 import { TintucComponent } from './components/tintuc/tintuc.component';
 import { ThanhtoanComponent } from './components/thanhtoan/thanhtoan.component';
+import { ThanhtoangiaohangComponent } from './components/thanhtoangiaohang/thanhtoangiaohang.component';
+import { DanhmucsanphamComponent } from './components/danhmucsanpham/danhmucsanpham.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ThanhtoanComponent } from './components/thanhtoan/thanhtoan.component';
     LienheComponent,
     ChitiettintucComponent,
     TintucComponent,
-    ThanhtoanComponent
+    ThanhtoanComponent,
+    ThanhtoangiaohangComponent,
+    DanhmucsanphamComponent
   ],
   imports: [
     BrowserModule,
