@@ -151,6 +151,13 @@ label {
     text-align: center;
     margin-bottom: 40px;
 }
+.haha{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1182px;
+    margin: auto;
+}
 .rows-product{
     display: flex; 
     flex-wrap: wrap;

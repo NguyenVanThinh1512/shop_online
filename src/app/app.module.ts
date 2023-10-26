@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './components/main/main.component';
@@ -15,6 +16,7 @@ import { TintucComponent } from './components/tintuc/tintuc.component';
 import { ThanhtoanComponent } from './components/thanhtoan/thanhtoan.component';
 import { ThanhtoangiaohangComponent } from './components/thanhtoangiaohang/thanhtoangiaohang.component';
 import { DanhmucsanphamComponent } from './components/danhmucsanpham/danhmucsanpham.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
@@ -34,9 +36,10 @@ import { DanhmucsanphamComponent } from './components/danhmucsanpham/danhmucsanp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [MainComponent]
 })
 export class AppModule { }
