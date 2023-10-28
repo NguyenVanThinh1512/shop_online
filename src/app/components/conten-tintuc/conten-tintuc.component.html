@@ -1,17 +1,7 @@
 <div class="rows-news">
-    <div class="my-news">
-        <a href="chitiettintuc"><img src="assets/images/tintuc1.jpg" alt="" ></a>
-        <div class="conten-news">Hướng dẫn bước đi trên giày cao gót đúng cách</div>
-        <div class="all-my-news">Giày cao gót là người bạn tốt nhất để đồng hành cùng một cô gái trên từng bước đi tự tin và thu hút. Tuy nhiên, đi giày cao gót đôi khi cũng gặp một chút khó khăn, nhất là với những người chưa bao giờ đi qua. Đừng lo, học đi một cách thuần [...]</div>
+    <div class="my-news" *ngFor="let new of news">
+        <a [routerLink]="'/chitiettintuc/' + new.id"><img [src]="'assets/images/' + new.image" alt="" ></a>
+        <div class="conten-news">{{ new.name }}</div>
+        <div class="all-my-news">{{ new.description }}</div>
     </div>
-    <div class="my-news">
-        <a href="chitiettintuc"><img src="assets/images/tintuc2.jpg" alt="" ></a>
-        <div class="conten-news">Hướng dẫn giảm mỡ bụng nhanh chóng nhất</div>
-        <div class="all-my-news">Cách giảm mỡ bụng nhanh chóng luôn là mối quan tâm hàng đầu của rất nhiều người, đặc biệt là chị em phụ nữ. Tình trạng mỡ thừa ở vùng bụng thực sự khiến chị em mất tự tin và vẻ quyến rũ, lôi cuốn của chính mình. Bài viết [...]</div>
-    </div>
-    <div class="my-news">
-        <a href="chitiettintuc"><img src="assets/images/tintuc3.jpg" alt="" ></a>
-        <div class="conten-news">5 cách làm đẹp bằng nha đam tươi hiệu quả</div>
-        <div class="all-my-news">Nha đam hay còn gọi là lô hội, lưu hội hoặc long tu được ví như “thần dược” của làn da với nhiều tác dụng làm đẹp. Với nhiều cách làm trắng da bằng những mặt nạ tự nhiên đang là xu hướng làm đẹp của nhiều phụ nữ bởi [...]</div>
-        </div>
 </div>

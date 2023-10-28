@@ -6,31 +6,25 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class NewsService {
 
   constructor(private http: HttpClient) { }
-  private productUrl = '/assets/data/data.json';
   private newUrl = '/assets/data/datanews.json';
 
   getNews():Observable<any[]> { 
     return this.http.get<any[]>(this.newUrl);``
   }
 
-  getProducts(): Observable<any[]> { 
-    return this.http.get<any[]>(this.productUrl);``
-  }
-
   // chi tiết sản phẩm
-  getProductById(productId: number): Observable<any> {
+  getNewsById(newsId: number): Observable<any> {
     
-    return this.getProducts().pipe(
+    return this.getNews().pipe(
       map((data: any) => {
-        const filteredProducts = data.products.filter((item: any) => item.id == productId);
-        console.log(filteredProducts, "Filtered Products");
-        return filteredProducts;
+        const filteredNews = data.news.filter((item: any) => item.id == newsId);
+        console.log(filteredNews, "Filtered News");
+        return filteredNews;
       })
     );
       
   }
 }
-

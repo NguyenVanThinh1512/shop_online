@@ -15,7 +15,7 @@
             <div class="my-product" *ngFor="let product of products">
                 <a [routerLink]="'/product/' + product.id"><img [src]="'assets/images/' + product.image" alt="{{ product.name }}"></a>
                 <div class="product-name">{{ product.name }}</div>
-                <div class="gia-tien">{{ product.price }}</div>
+                <div class="gia-tien">{{ product.price }}  VNĐ</div>
                 <button class="add-cart">THÊM VÀO GIỎ HÀNG</button>
             </div>
         </div>

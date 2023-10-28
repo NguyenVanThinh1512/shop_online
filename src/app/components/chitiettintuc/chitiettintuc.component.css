@@ -88,12 +88,13 @@ a img {
     border: 1px solid ;
     max-width: 1120px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .phanhoi .tab-content
 {
     margin: 40px;    
 }
+
 .fome-comment{
     display: flex;
 }

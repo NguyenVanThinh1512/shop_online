@@ -1,4 +1,6 @@
+<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 <app-header></app-header>
+
 <div class="thanhtoan">
     <h1>THANH TOÁN</h1>
     <div class="diachi">
@@ -6,23 +8,11 @@
         <p>Số 2 ngõ 378 Mỹ Đình Hà Nội</p>
     </div>
     <div class="rows">
-        <div class="rows-product">
-            <img src="assets/images/sp2.jpg" alt="" >
+        <div class="rows-product" *ngFor="let product of cartItems">
+            <img [src]="'assets/images/' + product.image" alt="{{ product.name }}">
             <div class="product-infor">
-                <h2 class="product-name">Áo len rulex cổ lửng</h2>
-                <div class="gia-tien">249,000 VNĐ</div>
-                <div class="Product-number">
-                    <button class="Product-number-button">-</button>
-                    <input type="number" class="Product-number-numder" id="quantity" name="quantity" min="1" value="1">
-                    <button class="Product-number-button">+</button>
-                </div>
-            </div>
-        </div>
-        <div class="rows-product">
-            <img src="assets/images/sp3.jpg" alt="" >
-            <div class="product-infor">
-                <h2 class="product-name">Áo len rulex cổ lửng</h2>
-                <div class="gia-tien">249,000 VNĐ</div>
+                <h2 class="product-name">{{ product.name }}</h2>
+                <div class="gia-tien">{{ product.price }} VNĐ</div>
                 <div class="Product-number">
                     <button class="Product-number-button">-</button>
                     <input type="number" class="Product-number-numder" id="quantity" name="quantity" min="1" value="1">
@@ -32,21 +22,33 @@
         </div>
     </div>
     <div class="giatien-xoadon">
-        <div class="giatien">Tổng cộng: 516,000 đ</div>
+        <div class="giatien">Tổng tiền: {{getTotal()}} VNĐ</div>
     </div>
     <div class="ptthanhtoan">
         <h3>Chọn phương thức thanh toán</h3>
     </div>
     <div class="fome-check">
-        <input type="checkbox">
+        <input class="form-control" type="radio" id="all-oder" name="apply-for"
+                                        value="all-oder">
         <h4> Thanh toán bằng tiền mặt</h4>
     </div>
     <div class="ptthanhtoan">
         <h3>Ghi chú</h3>
         <textarea name="comment" id="" cols="120" rows="3" placeholder="Ghi chú..."></textarea>
     </div>
+    <div class="toast" [class.active]="isToastActive">
+        <div class="toast-content">
+            <i class='bx bx-check-square'></i>
+          <div class="message">
+            <span class="text text-1">Trạng thái</span>
+            <span class="text text-2">Mua hàng thành công</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close" (click)="closeToast()"></i>
+        <div class="progress" [class.active]="isProgressActive"></div>
+      </div>
     <div class="summit">
-        <input type="submit" value="THANH TOÁN">
+        <input type="submit" value="THANH TOÁN" (click)="showSuccessMessage()">
     </div>
 </div>
 <app-footer></app-footer>

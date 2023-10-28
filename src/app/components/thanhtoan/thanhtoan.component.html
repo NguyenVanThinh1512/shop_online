@@ -1,28 +1,16 @@
 <app-header></app-header>
-<div class="thanhtoan">
+<div class="thanhtoan" >
     <h1>Giỏ hàng</h1>
     <div class="giatien-xoadon">
-        <div class="giatien">Tổng cộng: 516,000 đ</div>
+        <div class="giatien">Tổng cộng: {{getTotal()}} VNĐ</div>
         <div class="xoadon">Xóa đơn hàng</div>
     </div>
     <div class="rows">
-        <div class="rows-product">
-            <img src="assets/images/sp2.jpg" alt="" >
+        <div class="rows-product" *ngFor="let product of cartItems">
+            <img [src]="'assets/images/' + product.image" alt="{{ product.name }}">
             <div class="product-infor">
-                <h2 class="product-name">Áo len rulex cổ lửng</h2>
-                <div class="gia-tien">249,000 VNĐ</div>
-                <div class="Product-number">
-                    <button class="Product-number-button">-</button>
-                    <input type="number" class="Product-number-numder" id="quantity" name="quantity" min="1" value="1">
-                    <button class="Product-number-button">+</button>
-                </div>
-            </div>
-        </div>
-        <div class="rows-product">
-            <img src="assets/images/sp3.jpg" alt="" >
-            <div class="product-infor">
-                <h2 class="product-name">Áo len rulex cổ lửng</h2>
-                <div class="gia-tien">249,000 VNĐ</div>
+                <h2 class="product-name">{{ product.name }}</h2>
+                <div class="gia-tien">{{ product.price }} VNĐ</div>
                 <div class="Product-number">
                     <button class="Product-number-button">-</button>
                     <input type="number" class="Product-number-numder" id="quantity" name="quantity" min="1" value="1">

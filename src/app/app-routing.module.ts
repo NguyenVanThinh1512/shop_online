@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'gioithieu', component: GioithieuComponent },
   { path: 'lienhe', component: LienheComponent },
   { path: 'tintuc', component: TintucComponent },
-  { path: 'chitiettintuc', component: ChitiettintucComponent },
+  { path: 'chitiettintuc/:id', component: ChitiettintucComponent },
   { path: 'thanhtoan', component: ThanhtoanComponent },
   { path: 'thanhtoangiaohang', component: ThanhtoangiaohangComponent },
   { path: 'danhmucsanpham', component: DanhmucsanphamComponent },

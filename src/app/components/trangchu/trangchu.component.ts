@@ -12,7 +12,6 @@ export class TrangchuComponent {
   ngOnInit(){
     this.productService.getProducts().subscribe((data: any) => {
       this.products = data.products;
-      console.log(this.products);
     });
   }
 }

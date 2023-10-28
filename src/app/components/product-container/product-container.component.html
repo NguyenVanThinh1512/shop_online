@@ -18,14 +18,14 @@
                     <a href="#">ÁO LEN NỮ</a>
                 </nav>
                 <h1 class="product-name">{{ product.name }}</h1>
-                <div class="gia-tien">{{ product.price }}</div>
+                <div class="gia-tien">{{ product.price }} VNĐ</div>
                 <div class="warehouse">còn hàng</div>
                 <div class="Product-number">
                     <button class="Product-number-button">-</button>
                     <input type="number" class="Product-number-numder" id="quantity" name="quantity" min="1" value="1">
                     <button class="Product-number-button">+</button>
                 </div>
-                <button class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+                <a href="thanhtoan"><button class="add-cart" (click)="addToCart(product)">THÊM VÀO GIỎ HÀNG</button></a>
             </div>
         </div>
     </div>
@@ -38,13 +38,13 @@
                     <p>{{ product.description }}</p>
                 </div>
             </div>
-            <div class="tab">
+            <!-- <div class="tab">
                 <input type="radio" id="tab2" name="tab-group">
                 <label for="tab2">Đánh Giá</label>
                     <div class="tab-content">
                         <h3>Hãy là người đầu tiên nhận xét “Áo len rulex cổ lửng” </h3>
                         <p>đánh giá của bạn</p>
-                        <!-- sao -->
+                    
                         <p>Nhận xét của bạn *</p>
                         <textarea name="comment" id="" cols="50" rows="5" placeholder="Nhận xét..."></textarea>
                         <div class="fome-comment">
@@ -65,17 +65,17 @@
                             <input type="submit" value="Gửi đi">
                         </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="title">
             <H1>SẢN PHẨM TƯƠNG TỰ</H1>
         </div>
-        <div class="haha">
+        <div class="haha" >
             <div class="rows-product" *ngFor="let product of products; let i = index">
                 <div class="my-product" *ngIf="i < 4">
-                    <img [src]="'assets/images/' + product.image" alt="{{ product.name }}">
-                    <div class="product-name">Áo sơmi nữ dài tay thêu hình nhỏ</div>
-                    <div class="gia-tien">258,000 VNĐ</div>
+                    <a [routerLink]="'/product/' + product.id"><img [src]="'assets/images/' + product.image" alt="{{ product.name }}"></a>
+                    <div class="product-name">{{ product.name }}/div>
+                    <div class="gia-tien">{{ product.price }}</div>
                     <button class="add-cart">THÊM VÀO GIỎ HÀNG</button>
                 </div>
             </div>

@@ -1,14 +1,12 @@
 <app-header></app-header>
 <div class="tintuc">
-    <div class="rows-news">
+    <div class="rows-news" *ngFor="let new of new">
         <div class="my-news">
             <h1>TIN TỨC</h1>
-            <div class="conten-news">Hướng dẫn bước đi trên giày cao gót đúng cách</div>
-            <a href="">
-                <img src="assets/images/tintuc1.jpg" alt="" >
-            </a>
+            <div class="conten-news">{{ new.name }}</div>
+            <img [src]="'assets/images/' + new.image" alt="{{ new.name }}">
             <div class="title-news">
-                <div class="all-my-news">Giày cao gót là người bạn tốt nhất để đồng hành cùng một cô gái trên từng bước đi tự tin và thu hút. Tuy nhiên, đi giày cao gót đôi khi cũng gặp một chút khó khăn, nhất là với những người chưa bao giờ đi qua. Đừng lo, học đi một cách thuần thục trên giày cao gót chỉ mất một chút công luyện tập.</div>
+                <div class="all-my-news"><p>{{ new.description }}</p></div>
             </div>
         </div>
     </div>
