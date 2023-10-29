@@ -2,31 +2,11 @@
 <h1 class="title-tintuc">Tin tức</h1>
 <div class="tintuc">
     <div class="rows-news">
-        <div class="my-news">
-            <a href="chitiettintuc">
-                <img src="assets/images/tintuc1.jpg" alt="" >
-            </a>
+        <div class="my-news"  *ngFor="let new of news">
+            <a [routerLink]="'/chitiettintuc/' + new.id"><img [src]="'assets/images/' + new.image" alt="" ></a>
             <div class="title-news">
-                <div class="conten-news">Hướng dẫn bước đi trên giày cao gót đúng cách</div>
-            <div class="all-my-news">Giày cao gót là người bạn tốt nhất để đồng hành cùng một cô gái trên từng bước đi tự tin và thu hút. Tuy nhiên, đi giày cao gót đôi khi cũng gặp một chút khó khăn, nhất là với những người chưa bao giờ đi qua. Đừng lo, học đi một cách thuần [...]</div>
-            </div>
-        </div>
-        <div class="my-news">
-            <a href="chitiettintuc">
-                <img src="assets/images/tintuc1.jpg" alt="" >
-            </a>
-            <div class="title-news">
-                <div class="conten-news">Hướng dẫn bước đi trên giày cao gót đúng cách</div>
-            <div class="all-my-news">Giày cao gót là người bạn tốt nhất để đồng hành cùng một cô gái trên từng bước đi tự tin và thu hút. Tuy nhiên, đi giày cao gót đôi khi cũng gặp một chút khó khăn, nhất là với những người chưa bao giờ đi qua. Đừng lo, học đi một cách thuần [...]</div>
-            </div>
-        </div>
-        <div class="my-news">
-            <a href="chitiettintuc">
-                <img src="assets/images/tintuc1.jpg" alt="" >
-            </a>
-            <div class="title-news">
-                <div class="conten-news">Hướng dẫn bước đi trên giày cao gót đúng cách</div>
-            <div class="all-my-news">Giày cao gót là người bạn tốt nhất để đồng hành cùng một cô gái trên từng bước đi tự tin và thu hút. Tuy nhiên, đi giày cao gót đôi khi cũng gặp một chút khó khăn, nhất là với những người chưa bao giờ đi qua. Đừng lo, học đi một cách thuần [...]</div>
+                <div class="conten-news">{{ new.name }}</div>
+            <div class="all-my-news">{{ new.description }}</div>
             </div>
         </div>
     </div>
