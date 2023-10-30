@@ -16,7 +16,7 @@
                 <a [routerLink]="'/product/' + product.id"><img [src]="'assets/images/' + product.image" alt="{{ product.name }}"></a>
                 <div class="product-name">{{ product.name }}</div>
                 <div class="gia-tien">{{ product.price }} VNĐ</div>
-                <button class="add-cart">THÊM VÀO GIỎ HÀNG</button>
+                <a href="thanhtoan"><button class="add-cart" (click)="addToCart(product)">THÊM VÀO GIỎ HÀNG</button></a>
             </div>
         </div>
         <!-- sản phẩm nổi bật -->
