@@ -83,7 +83,10 @@ a img {
     padding-bottom: 10px;
 }
 .conten-tintuc-new {
-    border-left: 1px solid;
+    border-right: 1px solid;
+    border-right: 1px solid;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 .rows-news {
     margin-right: 30px;

@@ -7,7 +7,7 @@
     <div class="box-container-search">
         <div class="container-search">
             <span class="icom"><img src="assets/images/ic_search.svg" alt=""></span>
-            <input type="search" placeholder="Tìm kiếm" class="text-search" >
+            <input type="text" placeholder="Tìm kiếm" class="text-search" (input)="onSearchInput($event)">
         </div>
     </div>
     <div class="display">
@@ -32,7 +32,7 @@
     </div>
     <div class="product">
         <div class="rows-product">
-            <div class="my-product" *ngFor="let product of products">
+            <div class="my-product" *ngFor="let product of filteredProducts">
                 <a [routerLink]="'/product/' + product.id"><img [src]="'assets/images/' + product.image" alt="{{ product.name }}"></a>
                 <div class="product-name">{{ product.name }}</div>
                 <div class="gia-tien">{{ product.price }}  VNĐ</div>
